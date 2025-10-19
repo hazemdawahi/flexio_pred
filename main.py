@@ -138,7 +138,7 @@ def advise(req: AdviceRequest):
 
     # 2) Interpolation linéaire *à l'intérieur* de la bande
     if b:
-        mn, mx = f"{b}DurationMin", f"{b}DurationMax"
+        mn, mx = f"{b}DurationMin", f"{b}DurationMax"  
         lo, hi  = PRICE_BANDS[b]
         if mn in pref and mx in pref:
             dmin, dmax = _f(pref[mn]), _f(pref[mx])
